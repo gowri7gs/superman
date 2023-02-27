@@ -1,0 +1,86 @@
+<section class="section-styl">
+    <div>
+        <span class="initialname">Tues,14th February</span>
+    </div>
+    <div class="inner-styl">
+        <div class="inner-styl >div >div">
+            <img src="assets/images/Frame 37585@1x.svg">
+            <div><p>328</p><p class="para">Employer</p>
+            </div>
+        </div>
+        <div class="inner-styl >div >div">
+            <img src="assets/images/Frame 37587.png">
+            <div><p>4598</p><p class="para">Candidates</p>
+            </div>
+        </div>
+        <div class="inner-styl >div >div">
+            <a routerLink="/Candidates"> <img src="assets/images/Frame 37588.png"></a>
+           
+            <div><p>513</p><p class="para">Postedjobs</p>
+            </div>
+        </div>
+    </div>
+<div>
+</div>
+</section>
+<div class="section2-styl">
+    <div class="shortline">
+    <div class="column">Recently Added Jobs</div>
+    <div class="column">Recent Added Employers</div>
+    <div class="column">Recent Added Candidates</div>
+    </div>
+    <div class="innerlow-styl">
+        <div class="innerlow-styl >div">
+            <table class="table">
+                <thead>     
+                <tr>
+                    <th scope="col">Jobs_></th>
+                    <th scope="col">company_></th>  
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr  *ngFor="let StudentItem of Students">
+                    <td>{{StudentItem.name}}</td>
+                    <td>{{StudentItem.address.city}}</td>
+                  </tr>          
+                </tbody>
+              </table>
+        </div>
+        <div class="innerlow-styl >div">
+            <div class="innerlow-styl >div">
+                <table class="table">
+                    <thead>     
+                    <tr>
+                        <th scope="col">Jobs_></th>
+                        <th scope="col">company_></th>  
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr  *ngFor="let StudentItem of Students">
+                        <td>{{StudentItem.name}}</td>
+                        <td>{{StudentItem.address.city}}</td>
+                      </tr>          
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="innerlow-styl >div">
+            <div class="innerlow-styl >div">
+                <table class="table">
+                    <thead>     
+                    <tr>
+                        <th scope="col">Jobs_></th>
+                        <th scope="col">company_></th>  
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr  *ngFor="let StudentItem of Students">
+                        <td>{{StudentItem.name}}</td>
+                        <td>{{StudentItem.address.city}}</td>
+                      </tr>          
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>

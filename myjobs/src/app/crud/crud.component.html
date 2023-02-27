@@ -1,0 +1,24 @@
+<div class="container mt-4 bg-dark text-white" >
+    
+        <div class="container mt-4" >
+            <h1>list login</h1>
+        <table class="table">
+            <thead>
+             <h1 *ngIf="!isResultLoaded">Loading.................</h1>      
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>  
+                <th scope="col">Address</th>  
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let StudentItem of StudentArray">
+                <td>{{StudentItem.id  }}</td>
+                <td>{{StudentItem.name }}</td>
+                <td>{{StudentItem.username }}</td>
+                <td>{{StudentItem.address.city }}</td>
+              </tr>          
+            </tbody>
+          </table>
+        </div>
